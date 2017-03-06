@@ -1,8 +1,9 @@
 package jcrusader.pl.cytatdnia;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.widget.TextView;
 
 import jcrusader.pl.cytatdnia.dto.QuoteDto;
@@ -35,8 +36,19 @@ public class QuoteActivity extends AppCompatActivity {
             quoteTextView.setText(quoteDto.getQuote());
             authorTextView.setText(quoteDto.getAuthor());
         } else {
-            Log.w("Quote is null", "Sad :(");
+            showErrorAlert();
         }
+    }
+
+    private void showErrorAlert() {
+        AlertDialog.Builder dialog = new AlertDialog.Builder(this);
+
+        dialog.setTitle(getString(R.string.alertDialogTitle))
+                .setMessage(R.string.alertDialogMessage)
+                .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialoginterface, int i) {
+                    }
+                }).show();
     }
 
 }
