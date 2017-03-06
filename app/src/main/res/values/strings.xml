@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Cytat Dnia</string>
+    <string name="quoteDownloading">Pobieranie....</string>
 </resources>
