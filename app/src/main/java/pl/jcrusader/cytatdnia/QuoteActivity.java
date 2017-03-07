@@ -1,14 +1,13 @@
 package pl.jcrusader.cytatdnia;
 
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import pl.jcrusader.cytatdnia.dto.QuoteDto;
-import pl.jcrusader.cytatdnia.intentservice.QuoteDownloadService;
+import pl.jcrusader.cytatdnia.schedule.AlarmSetter;
 import pl.jcrusader.cytatdnia.task.DownloadQuoteTask;
 
 public class QuoteActivity extends AppCompatActivity {
@@ -21,8 +20,8 @@ public class QuoteActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quote);
         assignViewsToObjects();
-//        startQuoteDownloadBackgroundService();
         downloadAndDisplayQuote();
+        AlarmSetter.startAlarm(this);
     }
 
     private void assignViewsToObjects() {
@@ -53,12 +52,6 @@ public class QuoteActivity extends AppCompatActivity {
                     }
                 }).show();
     }
-
-    private void startQuoteDownloadBackgroundService() {
-        Intent quoteDownloadServiceIntent = new Intent(this, QuoteDownloadService.class);
-        startService(quoteDownloadServiceIntent);
-    }
-
 
 
 }

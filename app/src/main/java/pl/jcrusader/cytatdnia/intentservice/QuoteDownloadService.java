@@ -31,7 +31,9 @@ public class QuoteDownloadService extends IntentService {
     @Override
     protected void onHandleIntent(@Nullable Intent intent) {
         QuoteDto quoteDto = quoteService.downloadQuoteForToday();
-        showNewQuoteNotification();
+        if (quoteDto != null) {
+            showNewQuoteNotification();
+        }
     }
 
     private void showNewQuoteNotification() {
