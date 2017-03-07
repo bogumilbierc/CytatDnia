@@ -32,7 +32,7 @@ public class LocalQuoteDataServiceImpl implements LocalQuoteDataService {
             SharedPreferences sharedPreferences = getPreferences();
             String author = sharedPreferences.getString(AUTHOR_KEY, "");
             String quote = sharedPreferences.getString(QUOTE_KEY, "");
-            return new QuoteDto(author, quote);
+            return new QuoteDto(quote, author);
 
         }
         return null;
