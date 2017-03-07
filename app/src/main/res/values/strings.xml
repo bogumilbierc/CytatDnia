@@ -4,4 +4,5 @@
     <string name="alertDialogTitle">Błąd</string>
     <string name="alertDialogMessage">Nie można pobrać cytatu. Sprawdź połączenie z internetem i spróbuj ponownie.</string>
     <string name="notificationTitle">Kliknij aby zobaczyć cytat na dzisiaj.</string>
+    <string name="preference_file_key">pl.jcrusader.cytatdnia.QUOTE_PREFERENCES</string>
 </resources>

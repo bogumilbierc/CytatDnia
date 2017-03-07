@@ -4,7 +4,9 @@ import android.os.AsyncTask;
 
 import pl.jcrusader.cytatdnia.QuoteActivity;
 import pl.jcrusader.cytatdnia.dto.QuoteDto;
+import pl.jcrusader.cytatdnia.service.LocalQuoteDataService;
 import pl.jcrusader.cytatdnia.service.QuoteService;
+import pl.jcrusader.cytatdnia.service.impl.LocalQuoteDataServiceImpl;
 import pl.jcrusader.cytatdnia.service.impl.QuoteServiceImpl;
 
 /**
@@ -15,8 +17,10 @@ public class DownloadQuoteTask extends AsyncTask<Void, Void, QuoteDto> {
 
     private QuoteService quoteService;
     private QuoteActivity invokingActivity;
+    private LocalQuoteDataService localQuoteDataService;
 
     public DownloadQuoteTask(QuoteActivity invokingActivity) {
+        this.localQuoteDataService = new LocalQuoteDataServiceImpl(invokingActivity);
         this.invokingActivity = invokingActivity;
         this.quoteService = new QuoteServiceImpl();
     }
@@ -28,7 +32,12 @@ public class DownloadQuoteTask extends AsyncTask<Void, Void, QuoteDto> {
 
     @Override
     protected QuoteDto doInBackground(Void... params) {
-        return quoteService.downloadQuoteForToday();
+        if (localQuoteDataService.wasQuoteDownloadedToday()) {
+            return localQuoteDataService.getLocallyStoredQuoteForToday();
+        }
+        QuoteDto quoteDto = quoteService.downloadQuoteForToday();
+        localQuoteDataService.updateLocallyStoredQuote(quoteDto);
+        return quoteDto;
     }
 
     @Override
