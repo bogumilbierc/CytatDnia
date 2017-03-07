@@ -1,4 +1,4 @@
-package jcrusader.pl.cytatdnia.service;
+package pl.jcrusader.cytatdnia.service;
 
 import android.util.Log;
 
@@ -13,8 +13,8 @@ import org.powermock.core.classloader.annotations.PowerMockIgnore;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 
-import jcrusader.pl.cytatdnia.dto.QuoteDto;
-import jcrusader.pl.cytatdnia.service.impl.QuoteServiceImpl;
+import pl.jcrusader.cytatdnia.dto.QuoteDto;
+import pl.jcrusader.cytatdnia.service.impl.QuoteServiceImpl;
 
 /**
  * Created by bogumil on 3/6/17.

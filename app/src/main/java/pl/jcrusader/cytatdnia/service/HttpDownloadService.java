@@ -1,4 +1,4 @@
-package jcrusader.pl.cytatdnia.service;
+package pl.jcrusader.cytatdnia.service;
 
 /**
  * Created by bogumil on 3/6/17.

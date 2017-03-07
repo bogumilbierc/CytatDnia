@@ -1,4 +1,4 @@
-package jcrusader.pl.cytatdnia.dto;
+package pl.jcrusader.cytatdnia.dto;
 
 /**
  * Created by bogumil on 3/6/17.

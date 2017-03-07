@@ -1,12 +1,12 @@
-package jcrusader.pl.cytatdnia.service.impl;
+package pl.jcrusader.cytatdnia.service.impl;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import jcrusader.pl.cytatdnia.dto.QuoteDto;
-import jcrusader.pl.cytatdnia.service.QuoteExtractorService;
+import pl.jcrusader.cytatdnia.dto.QuoteDto;
+import pl.jcrusader.cytatdnia.service.QuoteExtractorService;
 
 /**
  * Created by bogumil on 3/6/17.

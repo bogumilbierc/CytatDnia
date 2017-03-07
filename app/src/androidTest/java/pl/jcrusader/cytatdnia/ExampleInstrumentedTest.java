@@ -1,4 +1,4 @@
-package jcrusader.pl.cytatdnia;
+package pl.jcrusader.cytatdnia;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

@@ -1,11 +1,11 @@
-package jcrusader.pl.cytatdnia.task;
+package pl.jcrusader.cytatdnia.task;
 
 import android.os.AsyncTask;
 
-import jcrusader.pl.cytatdnia.QuoteActivity;
-import jcrusader.pl.cytatdnia.dto.QuoteDto;
-import jcrusader.pl.cytatdnia.service.QuoteService;
-import jcrusader.pl.cytatdnia.service.impl.QuoteServiceImpl;
+import pl.jcrusader.cytatdnia.QuoteActivity;
+import pl.jcrusader.cytatdnia.dto.QuoteDto;
+import pl.jcrusader.cytatdnia.service.QuoteService;
+import pl.jcrusader.cytatdnia.service.impl.QuoteServiceImpl;
 
 /**
  * Created by bogumil on 3/6/17.

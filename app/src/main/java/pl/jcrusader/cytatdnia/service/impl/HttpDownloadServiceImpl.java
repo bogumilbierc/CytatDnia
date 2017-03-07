@@ -1,9 +1,9 @@
-package jcrusader.pl.cytatdnia.service.impl;
+package pl.jcrusader.cytatdnia.service.impl;
 
 
 import java.io.IOException;
 
-import jcrusader.pl.cytatdnia.service.HttpDownloadService;
+import pl.jcrusader.cytatdnia.service.HttpDownloadService;
 import okhttp3.Call;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;

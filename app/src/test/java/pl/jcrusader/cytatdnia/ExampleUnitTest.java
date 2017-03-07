@@ -1,4 +1,4 @@
-package jcrusader.pl.cytatdnia;
+package pl.jcrusader.cytatdnia;
 
 import org.junit.Test;
 

@@ -4,7 +4,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
     defaultConfig {
-        applicationId "jcrusader.pl.cytatdnia"
+        applicationId "pl.jcrusader.cytatdnia"
         minSdkVersion 15
         targetSdkVersion 25
         versionCode 1

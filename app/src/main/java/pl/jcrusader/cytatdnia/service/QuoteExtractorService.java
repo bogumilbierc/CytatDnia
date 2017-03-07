@@ -1,6 +1,6 @@
-package jcrusader.pl.cytatdnia.service;
+package pl.jcrusader.cytatdnia.service;
 
-import jcrusader.pl.cytatdnia.dto.QuoteDto;
+import pl.jcrusader.cytatdnia.dto.QuoteDto;
 
 /**
  * Created by bogumil on 3/6/17.

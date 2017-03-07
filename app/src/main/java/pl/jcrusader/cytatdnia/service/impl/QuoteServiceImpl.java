@@ -1,9 +1,9 @@
-package jcrusader.pl.cytatdnia.service.impl;
+package pl.jcrusader.cytatdnia.service.impl;
 
-import jcrusader.pl.cytatdnia.dto.QuoteDto;
-import jcrusader.pl.cytatdnia.service.HttpDownloadService;
-import jcrusader.pl.cytatdnia.service.QuoteExtractorService;
-import jcrusader.pl.cytatdnia.service.QuoteService;
+import pl.jcrusader.cytatdnia.dto.QuoteDto;
+import pl.jcrusader.cytatdnia.service.HttpDownloadService;
+import pl.jcrusader.cytatdnia.service.QuoteExtractorService;
+import pl.jcrusader.cytatdnia.service.QuoteService;
 
 /**
  * Created by bogumil on 3/6/17.

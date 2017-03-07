@@ -1,4 +1,4 @@
-package jcrusader.pl.cytatdnia;
+package pl.jcrusader.cytatdnia;
 
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -12,8 +12,8 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-import jcrusader.pl.cytatdnia.dto.QuoteDto;
-import jcrusader.pl.cytatdnia.task.DownloadQuoteTask;
+import pl.jcrusader.cytatdnia.dto.QuoteDto;
+import pl.jcrusader.cytatdnia.task.DownloadQuoteTask;
 
 public class QuoteActivity extends AppCompatActivity {
 
